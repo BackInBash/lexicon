@@ -1,0 +1,106 @@
+interactions:
+- request:
+    body: !!python/unicode '{}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '2'
+      Content-Type:
+      - !!python/unicode application/json
+      User-Agent:
+      - python-requests/2.23.0
+    method: GET
+    uri: https://dns.api.stackit.cloud/v1/projects/stackitprojectid/zones?dnsName[eq]=stackit-api-test.de&active[eq]=true
+  response:
+    body:
+      string: !!python/unicode ' {
+  "itemsPerPage": 0,
+  "message": "Success",
+  "totalItems": 6,
+  "totalPages": 1,
+  "zones": [
+    {
+      "acl": "0.0.0.0/0,::/0",
+      "active": true,
+      "contactEmail": "hostmaster.at.stackit.cloud.",
+      "creationFinished": "2022-01-31T10:00:00Z",
+      "creationStarted": "2022-01-31T10:00:00Z",
+      "defaultTTL": 3600,
+      "description": "this is our example zone",
+      "dnsName": "stackit-api-test.de",
+      "error": "error message",
+      "expireTime": 1209600,
+      "id": "37403b63-86ce-41e9-9b0b-1d8c5b3b2b96",
+      "isReverseZone": false,
+      "name": "test",
+      "negativeCache": 1800,
+      "primaries": [
+        "1.2.3.4"
+      ],
+      "primaryNameServer": "example.com",
+      "recordCount": 300,
+      "refreshTime": 3600,
+      "retryTime": 600,
+      "serialNumber": 2022111400,
+      "state": "CREATE_SUCCEEDED",
+      "type": "primary",
+      "updateFinished": "2022-01-31T10:00:00Z",
+      "updateStarted": "2022-01-31T10:00:00Z",
+      "visibility": "public"
+    },
+    {
+      "acl": "0.0.0.0/0,::/0",
+      "active": false,
+      "contactEmail": "hostmaster.at.stackit.cloud.",
+      "creationFinished": "2022-01-31T10:00:00Z",
+      "creationStarted": "2022-01-31T10:00:00Z",
+      "defaultTTL": 3600,
+      "description": "this is our example zone",
+      "dnsName": "example.com",
+      "error": "error message",
+      "expireTime": 1209600,
+      "id": "37403b63-86ce-41e9-9b0b-1d8c5b3b2b96",
+      "isReverseZone": false,
+      "name": "test",
+      "negativeCache": 1800,
+      "primaries": [
+        "1.2.3.4"
+      ],
+      "primaryNameServer": "example.com",
+      "recordCount": 300,
+      "refreshTime": 3600,
+      "retryTime": 600,
+      "serialNumber": 2022111400,
+      "state": "CREATE_SUCCEEDED",
+      "type": "primary",
+      "updateFinished": "2022-01-31T10:00:00Z",
+      "updateStarted": "2022-01-31T10:00:00Z",
+      "visibility": "public"
+    }
+  ]
+} 
+        '
+    headers:
+      access-control-allow-origin:
+      - '*'
+      connection:
+      - keep-alive
+      content-length:
+      - '7886'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Fri, 12 Jun 2020 08:20:36 GMT
+      transfer-encoding:
+      - chunked
+      vary:
+      - Origin
+    status:
+      code: 200
+      message: OK
+version: 1
